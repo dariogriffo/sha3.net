@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/r1s2l6r9o5oa595ff?svg=true)](https://ci.appveyor.com/project/dariogriffo/sha3.net)
+[![Build status](https://ci.appveyor.com/api/projects/status/r1s2l6r9o5oa595ff?svg=true)](https://ci.appveyor.com/project/dariogriffo/sha3-net)
 [![NuGet](https://img.shields.io/nuget/v/Sha3.Net.svg?style=flat)](https://www.nuget.org/packages/Sha3.Net/) 
 [![GitHub license](https://img.shields.io/github/license/griffo-io/tron.net.svg)](https://raw.githubusercontent.com/griffo-io/sha3.net/master/LICENSE)
 
