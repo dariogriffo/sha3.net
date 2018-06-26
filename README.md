@@ -5,7 +5,7 @@
 [![N|Solid](https://avatars2.githubusercontent.com/u/39886363?s=200&v=4)](https://github.com/griffo-io/sha3.net)
 
 # sha3.net
-C# port of Keccak, known as SHA3
+C# port of Keccak, known as SHA3, based on [Bouncy Castle](http://www.bouncycastle.org/csharp/index.html) library
 
 # How to use it
 
@@ -22,3 +22,5 @@ C# port of Keccak, known as SHA3
   and then call the `ComputeHash` method:
   
   `Sha3.Sha3256().ComputeHash(Encoding.UTF8.GetBytes("abc"));`
+ 
+
