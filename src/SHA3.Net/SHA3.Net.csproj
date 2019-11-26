@@ -1,27 +1,42 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net45;net46;netstandard2.0;netstandard2.1</TargetFrameworks>
     <Version>1.1.1</Version>
     <Authors>griffo.io</Authors>
     <Company>griffo.io</Company>
     <Product>SHA3.Net</Product>
     <Copyright>griffo.io</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/griffo-io/sha3.net/master/README.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/griffo-io/sha3.net</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/griffo-io/sha3.net/master/logo.jpg</PackageIconUrl>
-    <RepositoryUrl>https://github.com/griffo-io/sha3.net</RepositoryUrl>
-    <Description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</Description>
-    <PackageTags>SHA3</PackageTags>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    
+    
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\BouncyCastle.LICENSE" Link="BouncyCastle.LICENSE">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net45;net47;net48</TargetFrameworks>
+    <Version>1.2.0</Version>
+    <Authors>https://github.com/griffo-io</Authors>
+    <Company>https://github.com/griffo-io</Company>
+    <Product>SHA3.Net</Product>
+    <Copyright>https://github.com/griffo-io</Copyright>
+    <Description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</Description>
+    <LicenseUrl>https://raw.githubusercontent.com/griffo-io/sha3.net/master/README.md</LicenseUrl>
+    <PackageProjectUrl>https://github.com/griffo-io/sha3.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/griffo-io/sha3.net</RepositoryUrl>
+    <Product>SHA3.Net</Product>
+  </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageTags>SHA3</PackageTags>
+    <PackageReleaseNotes>Added support for net standard 2.1</PackageReleaseNotes>
+    <PackageLicenseFile>license\license.txt</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="license\license.txt" Pack="true" PackagePath="license"/>
+    <None Include="license\BouncyCastle.LICENSE" Pack="true" PackagePath="license"/>
+    <None Include="images\icon.png" Pack="true" PackagePath="images"/>
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="BouncyCastle.NetCore" Version="1.8.3" />
   </ItemGroup>
