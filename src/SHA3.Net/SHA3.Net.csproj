@@ -17,7 +17,7 @@
   <PropertyGroup>
     <PackageIcon>images\icon.png</PackageIcon>
     <PackageTags>SHA3</PackageTags>
-    <PackageReleaseNotes>Added net46 dll</PackageReleaseNotes>
+    <PackageReleaseNotes>Update BouncyCastle.NetCore</PackageReleaseNotes>
     <PackageLicenseFile>license\license.txt</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>

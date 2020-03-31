@@ -13,7 +13,7 @@
     <description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</description>
     <copyright>griffo.io</copyright>
     <repository url="https://github.com/griffo-io/SHA3.Net" />
-    <releaseNotes>Update BouncyCastle.NetCore </releaseNotes>
+    <releaseNotes>Update BouncyCastle.NetCore</releaseNotes>
     <dependencies>
         <group targetFramework=".NETFramework4.5">
             <dependency id="BouncyCastle.NetCore" version="1.8.5" exclude="Build,Analyzers" />
