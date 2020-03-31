@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net46;netstandard2.0;netstandard2.1</TargetFrameworks>
-    <Version>1.2.2</Version>
+    <Version>1.2.3</Version>
     <Authors>https://github.com/griffo-io</Authors>
     <Company>https://github.com/griffo-io</Company>
     <Product>SHA3.Net</Product>
@@ -27,7 +27,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.3" />
+    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.5" />
   </ItemGroup>
 
 </Project>
