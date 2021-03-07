@@ -1,10 +1,17 @@
-﻿using Org.BouncyCastle.Crypto.Digests;
+﻿using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("SHA3.Net.Tests")]
 
 namespace SHA3.Net
 {
+    using Org.BouncyCastle.Crypto.Digests;
+
     public class Sha3 : System.Security.Cryptography.HashAlgorithm
     {
         private readonly Sha3Digest _digest;
+        private readonly int _hashBitLength;
+
+        public override int HashSize => _hashBitLength;
 
         public static Sha3 Sha3224()
         {
@@ -25,16 +32,18 @@ namespace SHA3.Net
         {
             return new Sha3(512);
         }
-        private Sha3(int hashBitLength)
+
+        internal Sha3(int hashBitLength)
         {
-            _digest = new Sha3Digest(hashBitLength);
+            _hashBitLength = hashBitLength;
+            _digest = new Sha3Digest(_hashBitLength);
         }
 
         public override void Initialize()
         {
             HashValue = new byte[_digest.GetDigestSize()];
         }
-
+        
         protected override void HashCore(byte[] array, int ibStart, int cbSize)
         {
             if (HashValue == null)

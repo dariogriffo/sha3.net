@@ -26,4 +26,6 @@ C# port of Keccak, known as SHA3, based on [Bouncy Castle](http://www.bouncycast
         var hash = shaAlg.ComputeHash(Encoding.UTF8.GetBytes("abc"));
     }
  
-
+  
+  
+Logo Provided by [Vecteezy](https://vecteezy.com)

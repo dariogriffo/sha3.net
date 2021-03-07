@@ -46,5 +46,15 @@ namespace SHA3.Net.Tests
             var hash = Sha3.Sha3512().ComputeHash(Encoding.UTF8.GetBytes(input));
             hash.ToHexString().Should().Be(expected);
         }
+        
+        [TestCase(224)]
+        [TestCase(256)]
+        [TestCase(384)]
+        [TestCase(512)]
+        public void HashSize_Returns_The_Correct_Value(int size)
+        {
+            var hash = new Sha3(size);
+            hash.HashSize.Should().Be(size);
+        }
     }
 }
