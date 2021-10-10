@@ -2,30 +2,30 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>SHA3.Net</id>
-    <version>1.2.3</version>
-    <authors>https://github.com/griffo-io</authors>
-    <owners>https://github.com/griffo-io</owners>
+    <version>1.3.1</version>
+    <authors>https://github.com/dariogriffo</authors>
+    <owners>https://github.com/dariogriffo</owners>
     <tags>SHA3</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="file">license.txt</license>
-    <projectUrl>https://github.com/griffo-io/SHA3.Net</projectUrl>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/dariogriffo/SHA3.Net</projectUrl>
     <icon>icon.png</icon>	
     <description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</description>
-    <copyright>griffo.io</copyright>
-    <repository url="https://github.com/griffo-io/SHA3.Net" />
-    <releaseNotes>Update BouncyCastle.NetCore</releaseNotes>
+    <copyright>Dario Griffo</copyright>
+    <repository url="https://github.com/dariogriffo/SHA3.Net" />
+    <releaseNotes>Allow version ranges of BouncyCastle</releaseNotes>
     <dependencies>
         <group targetFramework=".NETFramework4.5">
-            <dependency id="BouncyCastle.NetCore" version="1.8.5" exclude="Build,Analyzers" />
+            <dependency id="BouncyCastle.NetCore" version="[1.8.1.1,)" exclude="Build,Analyzers" />
         </group>
         <group targetFramework=".NETFramework4.6">
-            <dependency id="BouncyCastle.NetCore" version="1.8.5" exclude="Build,Analyzers" />
+            <dependency id="BouncyCastle.NetCore" version="[1.8.1.1,)" exclude="Build,Analyzers" />
         </group>
         <group targetFramework=".NETStandard2.0">
-            <dependency id="BouncyCastle.NetCore" version="1.8.5" exclude="Build,Analyzers" />
+            <dependency id="BouncyCastle.NetCore" version="[1.8.1.1,)" exclude="Build,Analyzers" />
         </group>
         <group targetFramework=".NETStandard2.1">
-            <dependency id="BouncyCastle.NetCore" version="1.8.5" exclude="Build,Analyzers" />
+            <dependency id="BouncyCastle.NetCore" version="[1.8.1.1,)" exclude="Build,Analyzers" />
         </group>
     </dependencies>
   </metadata>
@@ -37,5 +37,9 @@
     <file src="bin\Release\net46\SHA3.Net.dll" target="lib\net46"  />
     <file src="bin\Release\netstandard2.0\SHA3.Net.dll" target="lib\netstandard2.0"  />
     <file src="bin\Release\netstandard2.1\SHA3.Net.dll" target="lib\netstandard2.1"  />
+    <file src="bin\Release\net45\SHA3.Net.pdb" target="lib\net45"  />
+    <file src="bin\Release\net46\SHA3.Net.pdb" target="lib\net46"  />
+    <file src="bin\Release\netstandard2.0\SHA3.Net.pdb" target="lib\netstandard2.0"  />
+    <file src="bin\Release\netstandard2.1\SHA3.Net.pdb" target="lib\netstandard2.1"  />
   </files>
 </package>

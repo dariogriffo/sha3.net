@@ -1,33 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net45;net46;netstandard2.0;netstandard2.1</TargetFrameworks>
-    <Version>1.3.0</Version>
-    <Authors>https://github.com/griffo-io</Authors>
-    <Company>https://github.com/griffo-io</Company>
-    <Product>SHA3.Net</Product>
-    <Copyright>https://github.com/griffo-io</Copyright>
-    <Description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</Description>
-    <LicenseUrl>https://raw.githubusercontent.com/griffo-io/sha3.net/master/LICENSE</LicenseUrl>
-    <PackageProjectUrl>https://github.com/griffo-io/sha3.net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/griffo-io/sha3.net</RepositoryUrl>
-    <Product>SHA3.Net</Product>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net45;net46;netstandard2.0;netstandard2.1</TargetFrameworks>
+        <Version>1.3.0</Version>
+        <Authors>https://github.com/griffo-io</Authors>
+        <Company>https://github.com/griffo-io</Company>
+        <Product>SHA3.Net</Product>
+        <Copyright>https://github.com/griffo-io</Copyright>
+        <Description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</Description>
+        <LicenseUrl>https://raw.githubusercontent.com/griffo-io/sha3.net/master/LICENSE</LicenseUrl>
+        <PackageProjectUrl>https://github.com/griffo-io/sha3.net</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/griffo-io/sha3.net</RepositoryUrl>
+        <Product>SHA3.Net</Product>
+        <DebugSymbols>true</DebugSymbols>
+        <EmbedAllSources>true</EmbedAllSources>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <PackageIcon>images\icon.png</PackageIcon>
-    <PackageTags>SHA3</PackageTags>
-    <PackageReleaseNotes>Override HashSize property</PackageReleaseNotes>
-    <PackageLicenseFile>license\license.txt</PackageLicenseFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="licenses\license.txt" Pack="true" PackagePath="license"/>
-    <None Include="licenses\BouncyCastle.LICENSE" Pack="true" PackagePath="license"/>
-    <None Include="images\icon.png" Pack="true" PackagePath="images"/>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.5" />
-  </ItemGroup>
+    <PropertyGroup>
+        <PackageIcon>images\icon.png</PackageIcon>
+        <PackageTags>SHA3</PackageTags>
+        <PackageReleaseNotes>Override HashSize property</PackageReleaseNotes>
+        <PackageLicenseFile>license\license.txt</PackageLicenseFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="licenses\license.txt" Pack="true" PackagePath="license" />
+        <None Include="licenses\BouncyCastle.LICENSE" Pack="true" PackagePath="license" />
+        <None Include="images\icon.png" Pack="true" PackagePath="images" />
+    </ItemGroup>
+    <PropertyGroup>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BouncyCastle.NetCore" Version="[1.8.1.1,)" />
+    </ItemGroup>
 
 </Project>
