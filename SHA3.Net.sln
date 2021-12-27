@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHA3.Net", "src\SHA3.Net\SHA3.Net.csproj", "{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA3.Net.Tests", "tests\SHA3.Net.Tests\SHA3.Net.Tests.csproj", "{0B111332-4851-4284-9383-D54A0BDE507C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA3.Net.Tests", "tests\SHA3.Net.Tests\SHA3.Net.Tests.csproj", "{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B111332-4851-4284-9383-D54A0BDE507C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B111332-4851-4284-9383-D54A0BDE507C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B111332-4851-4284-9383-D54A0BDE507C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B111332-4851-4284-9383-D54A0BDE507C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
