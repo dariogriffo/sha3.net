@@ -11,21 +11,27 @@ C# port of Keccak, known as SHA3, based on [Bouncy Castle](http://www.bouncycast
 
   - Just call any of the four static methods to return the SHA3 with the desired block size
   
-  `Sha3.Sha3224()`
+  ````csharp
+  Sha3.Sha3224()
+  ````
   
-  `Sha3.Sha3256()`
-  
-  `Sha3.Sha3384()`
-  
-  `Sha3.Sha3512()`
-  
+  ````csharp
+  Sha3.Sha3256()
+  ````  
+  ````csharp
+  Sha3.Sha3384()
+  ````
+  ````csharp
+  Sha3.Sha3512()
+  ````
   and then call the `ComputeHash` method:
   
-    using (var shaAlg = Sha3.Sha3256())
-    {   
-        var hash = shaAlg.ComputeHash(Encoding.UTF8.GetBytes("abc"));
-    }
- 
+````csharp
+using (var shaAlg = Sha3.Sha3256())
+{   
+    var hash = shaAlg.ComputeHash(Encoding.UTF8.GetBytes("abc"));
+}
+````
   
   
 Logo Provided by [Vecteezy](https://vecteezy.com)
